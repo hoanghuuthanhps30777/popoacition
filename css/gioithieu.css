@@ -1,0 +1,112 @@
+.menu1 {
+    margin: 0px;
+    padding: 0px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px white;
+    list-style: none;
+    background-color: white;
+    height: 40px;
+    width: 600px;
+    position: absolute;
+    top: 17px;
+    right: 0px;
+}
+
+ul.menu1>li>a {
+    display: block;
+    line-height: 40px;
+    text-decoration: none;
+    font-variant: small-caps;
+    padding-left: 25px;
+    color: rgb(216, 7, 7);
+}
+
+ul.menu1>li>a:hover {
+    color: yellow;
+    font-weight: bolder;
+    background-color: rgb(223, 8, 8);
+}
+
+ul.menu1>li {
+    float: left;
+    margin: 0 5px;
+    position: relative;
+}
+
+/*thẻ gạch ngang hr*/
+.hr {
+    background-image: linear-gradient(to right, rgb(225, 9, 9), rgb(230, 9, 9));
+    height: 3px;
+
+}
+
+/*phần đánh giá trải nghiệm*/
+ul.dau>a:hover {
+    color: rgb(216, 7, 7)
+}
+
+ul.dau>a {
+    text-decoration: none;
+    color: rgb(51, 50, 50)
+}
+
+/*chữ ở giữa ảnh*/
+.text {
+    color: white;
+    position: absolute;
+    top: 350px;
+    right: 500px;
+    font-size: 70px;
+}
+
+.toc {
+    color: white;
+    position: absolute;
+    top: 350px;
+    right: 500px;
+    font-size: 30px;
+}
+
+/*phần hr ở đoạn 2*/
+.hihi {
+    background-image: linear-gradient(to right, rgb(222, 215, 215), rgb(222, 215, 215));
+    height: 3px;
+}
+
+.sub-menu1 {
+    margin: 0px;
+    padding: 0px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px orangered;
+    list-style: none;
+    width: 150px;
+    position: absolute;
+    display: none;
+}
+
+.sub-menu1>li>a {
+    display: block;
+    line-height: 30px;
+    border-bottom: 1px dotted orangered;
+    text-decoration: none;
+    font-variant: small-caps;
+    padding-left: 25px;
+    color: rgb(64, 61, 60);
+}
+
+.sub-menu1>li>a:hover {
+    color: rgb(78, 75, 75);
+    font-weight: bolder;
+
+}
+
+ul.menu1>li:hover>ul {
+    display: block;
+}
+
+/*phânf hr thứ 3*/
+.hr {
+    background-image: linear-gradient(to right, rgb(107, 101, 101), rgb(90, 88, 88));
+    height: 3px;
+
+}

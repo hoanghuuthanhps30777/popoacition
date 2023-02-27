@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    width: 100%;
+    min-width: 440px;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+header {
+    width: 100%;
+    background-image: url(img/hinh1.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 25%;
+}
+nav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding-right: 5%;
+    background-color: seagreen;
+    z-index: 99;
+}
+nav>ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+nav>ul>li>a {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    line-height: 50px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+nav>ul>li>a:hover {
+    transition: 1.5s;
+    background-color: darkgreen;
+    text-shadow: 2px 2px 2px black;
+}
+nav>ul>li>a:hover>div {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: example;
+    animation-duration: 500ms;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+@keyframes example {
+    0%   {background-color:blue; left:0%; top:0%;}
+    25%  {background-color:orangered; left:calc(100% - 5px); top:0%;}
+    50%  {background-color:green; left:calc(100% - 5px); top:calc(100% - 5px);}
+    75%  {background-color:yellow; left:0%; top:calc(100% - 5px);}
+    100% {background-color:white; left:0%; top:0%;}
+}
+article {
+    margin: 20px;
+}
+article>div {
+    display: flex;
+}
+article>div:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+.noidung,.hinhanh {
+    flex: 50%;
+    background-color: aquamarine;
+}
+.noidung {
+    padding: 20px;
+}
+.noidung>h4 {
+    text-transform: uppercase;
+}
+.noidung:hover {
+    transition: 1000ms;
+    background-color: aqua;
+}
+.noidung:hover>h4 {
+    color: red;
+}
+.noidung>p {
+    text-align: justify;
+    margin: 20px 0;
+}
+.noidung>a {
+    padding: 5px 10px;
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: seagreen;
+    border-radius: 20px;
+}
+.noidung>a:hover {
+    background-color: darkgreen;
+}
+@media screen and (max-width: 840px){
+    article>div,article>div:nth-child(2n) {
+        flex-direction: column;
+    }
+    .noidung,.hinhanh {
+        flex: 100%;
+    }
+}

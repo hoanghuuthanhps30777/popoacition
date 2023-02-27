@@ -1,0 +1,375 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background: #93d3f5;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            line-height: 1.15;
+            color: #111;
+        }
+
+        #wrapper {
+            max-width: 1170px;
+            margin: 0 auto;
+
+        }
+
+        .headline {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #111;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            border: 1px solid #bebebe;
+            display: inline-block;
+            color: #555;
+            font-weight: 600;
+            background-color: #efefef;
+        }
+
+        ul.products {
+            list-style: none;
+            display: flex;
+            /* cho sản phẩm nằm trên 1 hàng */
+            flex-wrap: wrap;
+            /* cho xuống hàng */
+            justify-content: space-between;
+            /* dãn khung hàng ngang */
+        }
+
+        ul.products li {
+            padding-left: 15px;
+            padding-right: 15px;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+            flex-basis: 25%;
+            /* xác định độ rộng form ảnh */
+        }
+
+        ul.products li img {
+            max-width: 100%;
+            height: 300px;
+        }
+
+        ul.products li .product-top a .buy-now {
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            color: #fff;
+            background-color: #446084;
+            padding: 10px 0;
+        }
+
+        ul.products li .product-info {
+            padding: 10px 0px;
+        }
+
+        ul.products li .product-info a {
+            display: block;
+            text-decoration: none;
+        }
+
+        ul.products li .product-info a .product-cat {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #9e9e9e;
+            padding: 3px 0px;
+        }
+
+        ul.products li .product-info a .product-name {
+            color: #334862;
+            padding: 3px 0px;
+
+        }
+
+        ul.products li .product-info .product-price {
+            color: #111;
+            padding: 2px 0;
+            font-weight: 600;
+
+        }
+
+        .footer {
+            margin-top: 150px;
+
+            padding: 100px 15%;
+            background: #333;
+            color: #efefef;
+            display: flex;
+
+        }
+
+        .footer div {
+            text-align: center;
+
+        }
+
+        .col_2 {
+            flex-grow: 2;
+        }
+
+        .footer div h3 {
+            font-weight: 300px;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+
+        .footer .col-1 {
+            display: block;
+            text-decoration: none;
+            color: #fff9f9;
+            margin-bottom: 10px;
+
+        }
+
+        form input {
+            width: 10%;
+            height: 45px;
+            border-radius: 4px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            outline: none;
+            border: none;
+        }
+
+        form button {
+            background: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+            border-radius: 30px;
+            padding: 10px 30px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .social-icons {
+            margin-top: 30px;
+
+        }
+
+        .social-icons i {
+            font-size: 22px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .hai {
+            font-size: 10px;
+            text-align: center;
+        }
+    </style>
+    <div id="wrapper">
+        <div class="headline">
+            <h3>Foods</h3>
+        </div>
+        <ul class="products">
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thum">
+                            <img class="p1"
+                                src="https://phongnhaexplorer.com/wp-content/uploads/2021/11/banh-beo-quang-binh.jpg"
+                                alt="Bánh bèo" width="500px" height="400px">
+                        </a>
+                        <a class="buy-now">Mua ngay</a>
+                        <!-- mua ngay -->
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat"><mark>Giảm 10% khi mua 3 dĩa</mark></a>
+                        <a href="" class="product-name">Bánh bèo</a>
+                        <div class="product-price">$1.33/dĩa</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thum">
+                            <img class="p2"
+                                src="https://phongnhaexplorer.com/wp-content/uploads/2021/11/banh-khoai-quang-binh.jpg"
+                                alt="Bánh khoái" width="500px" height="400px">
+                        </a>
+                        <a class="buy-now">Mua ngay</a>
+                        <!-- mua ngay -->
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat"><mark>Giảm 20% khi mua trên 5 cái</mark></a>
+                        <a href="" class="product-name">Bánh khoái</a>
+                        <div class="product-price">$0.5/cái</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thum">
+                            <img class="p3"
+                                src="https://phongnhaexplorer.com/wp-content/uploads/2021/11/banh-loc-quang-binh.jpg"
+                                alt="Bánh bột lọc" width="500px" height="400px">
+                        </a>
+                        <a class="buy-now">Mua ngay</a>
+                        <!-- mua ngay -->
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat"><mark>Chuyên sĩ lẻ</mark></a>
+                        <a href="" class="product-name">Bánh bột lọc</a>
+                        <div class="product-price">$0.2/cái</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thum">
+                            <img class="p4"
+                                src="https://phongnhaexplorer.com/wp-content/uploads/2021/11/tam-xao-la-lot.jpg"
+                                alt="Nhộng xào" width="500px" height="400px">
+                        </a>
+                        <a class="buy-now">Mua ngay</a>
+                        <!-- mua ngay -->
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat"><mark>Giảm giá sốc 50% khi ăn vào ngày thứ 6 </mark></a>
+                        <a href="" class="product-name">Nhộng xào lá lốt</a>
+                        <div class="product-price">$2.99/dĩa</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thum">
+                            <img class="p5"
+                                src="https://phongnhaexplorer.com/wp-content/uploads/2021/11/chao-luon-quang-binh.jpg"
+                                alt="Cháo lươn" width="500px" height="400px">
+                        </a>
+                        <a class="buy-now">Mua ngay</a>
+                        <!-- mua ngay -->
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat"><mark>Giảm 30% cho hộ gia đình trên 3 người</mark></a>
+                        <a href="" class="product-name">Cháo lươn</a>
+                        <div class="product-price">$2/tô</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thum">
+                            <img class="p6"
+                                src="https://phongnhaexplorer.com/wp-content/uploads/2021/11/com-boi-minh-hoa.jpg"
+                                alt="Cơm bồi" width="500px" height="400px">
+                        </a>
+                        <a class="buy-now">Mua ngay</a>
+                        <!-- mua ngay -->
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat"><mark>Giảm 100% khi đi chợ Tình</mark></a>
+                        <a href="" class="product-name">Cơm bồi Minh Hóa</a>
+                        <div class="product-price">$1/chén</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thum">
+                            <img class="p7"
+                                src="https://qbtravel.vn/wp-content/uploads/2021/08/mau-vang-canh-gian-cua-khoai-deo.jpg"
+                                alt="Khoai lát gieo" width="500px" height="400px">
+                        </a>
+                        <a class="buy-now">Mua ngay</a>
+                        <!-- mua ngay -->
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat"><mark>Mua 5 bịch tặng 1 bịch</mark></a>
+                        <a href="" class="product-name">Khoai lát gieo</a>
+                        <div class="product-price">$5.9999/Bịch 500g</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thum">
+                            <img class="p8"
+                                src="https://phongnhaexplorer.com/wp-content/uploads/2021/11/nam-tram-xao-rau-lang.jpg"
+                                alt="Nấm tràm xào rau lang" width="500px" height="400px">
+                        </a>
+                        <a class="buy-now">Mua ngay</a>
+                        <!-- mua ngay -->
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat"><mark>Giảm 10% khi mua vào thứ 6</mark></a>
+                        <a href="" class="product-name">Nấm tràm xào rau lang </a>
+                        <div class="product-price">$2..999/dĩa</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+    <div class="footer">
+        <div class="col_1">
+            <h3>USEFUL LINKS</h3>
+            <a href="#"><mark>About</mark></a><br><br>
+            <a href="#"><mark>Services</mark></a><br><br>
+            <a href="#"><mark>Conttac</mark></a><br><br>
+            <a href="#"><mark>Shop</mark></a><br><br>
+            <a href="#"><mark>Blog<mark></a>
+        </div>
+        <div class="col_2">
+            <h3>NEWSLETTER</h3>
+            <form>
+                <imput type="text" placehoder="Your Email Addres">
+                    <br>
+                    <button type="submit">SUBRICE NOW</button>
+                </imput>
+            </form>
+        </div>
+        <div class="col_3">
+            <h3>CONTTAC</h3>
+            <p>123, DongHoi, QuangBinh, VietNam</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100063484203792&mibextid=ZbWKwL">
+                    <img src="youtube.png" width="40px" height="30px">
+                    <img src="5968764.png" width="40px" height="30px">
+                    <img src="2111463.png" width="40px" height="30px">
+                </a>
+            </div>
+            <div class="gt">
+                <p>
+                    @Bản quyền thuộc công ty TNHH HHT
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="hai">
+        <h3>Mọi dịch vụ nếu có sai sót mong các bạn báo cáo theo hotline:<mark> 0378426216</mark></h3>
+    </div>
+</body>
+
+</html>

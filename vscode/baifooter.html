@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rek="stylesheet" href="baifooter.css">
+</head>
+<body>
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h3>Liên hệ</h3>
+              <p>123 Đường Nguyễn Văn Linh, Quận Thanh Khê, TP Đà Nẵng</p>
+              <p>Điện thoại: (123) 456-7890</p>
+              <p>Email: info@mytravel.com</p>
+            </div>
+            <div class="col-md-4">
+              <h3>Chính sách</h3>
+              <ul>
+                <li><a href="#">Điều khoản sử dụng</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
+                <li><a href="#">Chính sách hoàn tiền</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h3>Liên kết</h3>
+              <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Về chúng tôi</a></li>
+                <li><a href="#">Tour du lịch</a></li>
+                <li><a href="#">Đặt phòng khách sạn</a></li>
+              </ul>
+            </div>
+          <bia/div>
+        </div>
+      </footer>
+      
+</body>
+</html>
+.sub-menu1 {
+  margin: 0px;
+  padding: 0px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px orangered;
+  list-style: none;
+  width: 150px;
+  position: absolute;
+  display: none;
+}
+
+.sub-menu1>li>a {
+  display: block;
+  line-height: 30px;
+  border-bottom: 1px dotted orangered;
+  text-decoration: none;
+  font-variant: small-caps;
+  padding-left: 25px;
+  color: rgb(64, 61, 60);
+}
+
+.sub-menu1>li>a:hover {
+  color: rgb(78, 75, 75);
+  font-weight: bolder;
+
+}
+
+ul.menu1>li:hover>ul {
+  display: block;
+}
+
+/*phânf hr thứ 3*/
+.hr {
+  background-image: linear-gradient(to right, rgb(107, 101, 101), rgb(90, 88, 88));
+  height: 3px;
+
+}
+
+<h2>Đánh giá trải nghiệm</h2>
+    <form>
+        <div class="tu">
+            <label>Họ và tên:</label><br>
+            <input name="id" type="text">
+        </div>
+        <div class="thanh">
+            <label>Giới tính: </label>
+            <label><input name="gender" type="radio">Nam</label>
+            <label><input name="gender" type="radio">Nữ</label>
+            <label><input name="gender" type="radio">Khác</label><br>
+            <br>
+        </div>
+        <div class="hih">
+            <lable><u>Cảm nghĩ:</u></lable><br />
+            <textarea rows="5" cols="40"> </textarea><br>
+        </div>
+        <div class="duy">
+            <br>
+            <label>Đánh giá:</label>
+            <label><input name="gender" type="radio">Không hài lòng</label>
+            <label><input name="gender" type="radio">Tạm chấp nhận</label>
+            <label><input name="gender" type="radio">Hài lòng</label>
+            <label><input name="gender" type="radio">Rất hài lòng</label>
+            <br>
+        </div>
+        <div class="huh">
+            <hr>
+            <input type="reset" value="Nhập lại">
+            <input type="button" value="Gửi">
+        </div>
+    </form>

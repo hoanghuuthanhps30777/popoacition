@@ -1,0 +1,408 @@
+/*menu đầu*/
+.menu1 {
+  margin: 0px;
+  padding: 0px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px white;
+  list-style: none;
+  background-color: white;
+  height: 40px;
+  width: 600px;
+  position: absolute;
+  top: 17px;
+  right: 0px;
+}
+
+ul.menu1>li>a {
+  display: block;
+  line-height: 40px;
+  text-decoration: none;
+  font-variant: small-caps;
+  padding-left: 25px;
+  color: rgb(216, 7, 7);
+}
+
+ul.menu1>li>a:hover {
+  color: yellow;
+  font-weight: bolder;
+  background-color: rgb(223, 8, 8);
+}
+
+ul.menu1>li {
+  float: left;
+  margin: 0 5px;
+  position: relative;
+}
+
+/*thẻ gạch ngang hr*/
+.hr {
+  background-image: linear-gradient(to right, rgb(225, 9, 9), rgb(230, 9, 9));
+  height: 3px;
+
+}
+
+/*phần đánh giá trải nghiệm*/
+ul.dau>a:hover {
+  color: rgb(216, 7, 7)
+}
+
+ul.dau>a {
+  text-decoration: none;
+  color: rgb(51, 50, 50)
+}
+
+/*chữ ở giữa ảnh*/
+.text {
+  color: white;
+  position: absolute;
+  top: 350px;
+  right: 500px;
+  font-size: 70px;
+}
+
+.toc {
+  color: white;
+  position: absolute;
+  top: 350px;
+  right: 500px;
+  font-size: 30px;
+}
+
+/*phần hr ở đoạn 2*/
+.hihi {
+  background-image: linear-gradient(to right, rgb(222, 215, 215), rgb(222, 215, 215));
+  height: 3px;
+}
+
+/*đoạn văn*/
+.vb {
+  text-align: left;
+  margin-left: 40px;
+  margin-right: 20px;
+  font-size: 20px;
+  color: rgb(67, 68, 69)
+}
+
+.sub-menu {
+  margin: 0px;
+  padding: 0px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px orangered;
+  list-style: none;
+  width: 150px;
+  position: absolute;
+  display: none;
+}
+
+.sub-menu>li>a {
+  display: block;
+  line-height: 30px;
+  border-bottom: 1px dotted orangered;
+  text-decoration: none;
+  font-variant: small-caps;
+  padding-left: 25px;
+  color: orangered;
+}
+
+.sub-menu>li>a:hover {
+  color: red;
+  font-weight: bolder;
+}
+
+/*chatgpt*/
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  top: 700px;
+  font-size: 20px;
+ 
+}
+
+.menu-item {
+  display: inline-block;
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f2f2f2;
+  padding: 10px 0
+  
+}
+
+.menu-item:hover .sub-menu {
+  display: block;
+  
+}
+
+.sub-menu-item {
+  display: block;
+  padding: 10px 20px;
+  
+}
+
+/*pần hr đoạn 3*/
+.haha {
+  background-image: linear-gradient(to right, rgb(222, 215, 215), rgb(222, 215, 215));
+  height: 2px;
+}
+
+.diemden {
+  text-align: left;
+  margin-left: 40px;
+}
+
+/*phần chữ câu hỏ*/
+.h2 {
+  padding-left: 40px;
+  color: rgb(89, 87, 85);
+  right: 40px;
+}
+
+/*phần chữ và hình ảnh trong phong nha kẻ bàng*/
+.phongnha {
+  box-shadow: 3px;
+}
+
+.phongnha img {
+  margin: 40px;
+  float: left;
+  width: 813px;
+  height: 457px;
+}
+
+.vb2 {
+  text-align: left;
+  margin-left: 40px;
+  margin-right: 20px;
+  font-size: 20px;
+  color: rgb(40, 40, 41);
+  text-indent: 2%;
+}
+
+.pn {
+  margin-left: 40px;
+  right: 0px;
+  margin: 60px;
+  text-align: center;
+}
+/*Phan hang son doong*/
+.sondong {
+  box-shadow: 3px;
+}
+
+.sondong img {
+  margin: 40px;
+  float: left;
+  width: 813px;
+  height: 457px;
+}
+
+.vb3{
+  text-align: left;
+  margin-left: 40px;
+  margin-right: 20px;
+  font-size: 20px;
+  color: rgb(40, 40, 41);
+  text-indent: 2%;
+}
+
+.sd {
+  margin-left: 40px;
+  margin: 60px;
+  text-align: center;
+  padding:30px;
+}
+/* Vung chua dao yen*/
+.vungchua {
+  box-shadow: 3px;
+}
+
+.vungchua img {
+  margin: 40px;
+  float: left;
+  width: 813px;
+  height: 457px;
+}
+
+.vb4 {
+  text-align: left;
+  margin-left: 40px;
+  margin-right: 20px;
+  font-size: 20px;
+  color: rgb(40, 40, 41);
+  text-indent: 2%;
+}
+
+.vc {
+  padding: 30px;
+  margin-left: 40px;
+  right: 0px;
+  margin: 60px;
+  text-align: center;
+}
+
+/*them*/
+.sub-menu1 {
+  margin: 0px;
+  padding: 0px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px orangered;
+  list-style: none;
+  width: 150px;
+  position: absolute;
+  display: none;
+}
+
+.sub-menu1>li>a {
+  display: block;
+  line-height: 30px;
+  border-bottom: 1px dotted orangered;
+  text-decoration: none;
+  font-variant: small-caps;
+  padding-left: 25px;
+  color: rgb(64, 61, 60);
+}
+
+.sub-menu1>li>a:hover {
+  color: rgb(78, 75, 75);
+  font-weight: bolder;
+
+}
+
+ul.menu1>li:hover>ul {
+  display: block;
+}
+
+/*phânf hr thứ 3*/
+.hr {
+  background-image: linear-gradient(to right, rgb(107, 101, 101), rgb(90, 88, 88));
+  height: 3px;
+
+}
+
+/*phan ảnh chia nhỏ*/
+.chianho img {
+
+  margin: 5px;
+  padding: 4px;
+}
+
+.chianho {
+  margin-left: 20px;
+}
+
+.chianho img:hover {
+  transform: scale(1.1);
+  /* cỡ zoom khi di chuột vào */
+
+}
+
+.chianho div {
+  display: block;
+  overflow: hidden;
+}
+
+.chianho a title {
+  color: red;
+}
+
+/*phần gạch ngang ở phần dưới*/
+
+.hr {
+  background-image: linear-gradient(to right, rgb(107, 101, 101), rgb(90, 88, 88));
+  height: 3px;
+
+}
+
+/*phần chỉnh ảnh dịch vụ*/
+.anh {
+  display: inline-flex;
+  clear: left;
+  text-align: center;
+
+}
+
+figcaption {
+  font-size: 40px;
+}
+
+.phong {
+  margin-left: 40px;
+  color: rgb(133, 57, 57);
+  font-size: x-large;
+}
+
+.anh>a {
+  text-decoration-line: none;
+}
+
+/*dich vu*/
+.footer{
+  margin-top: 150px;
+ 
+  padding: 100px 15%;
+  background: #333;
+  color: #efefef;
+  display: flex;
+
+}
+.footer div{
+  text-align: center;
+
+}
+.col_2{
+  flex-grow: 2;
+}
+.footer div h3{
+  font-weight: 300px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+.footer .col-1{
+  display: block;
+  text-decoration: none;
+  color:#fff9f9;
+  margin-bottom: 10px;
+ 
+}
+form input{
+  width: 10%;
+  height: 45px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  outline: none;
+  border: none;
+}
+
+form button{
+  background: transparent ;
+  border: 2px solid #fff;
+  color:#fff;
+  border-radius: 30px;
+  padding:10px 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.social-icons{
+  margin-top: 30px;
+
+}
+.social-icons i {
+font-size: 22px;
+margin: 10px;
+cursor: pointer;
+}
+.hai{
+  font-size: 10px;
+ text-align: center;
+}
